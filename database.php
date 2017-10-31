@@ -3,10 +3,8 @@ ini_set('error_reporting', E_ALL);
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 header("Content-Type: text/html; charset=utf-8");
-$pdo = new PDO("mysql:host=localhost;dbname=global", "root", "");
-//     , [
-//         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
-// ]);
+$pdo = new PDO("mysql:host=localhost;dbname=global", "gryazev", "neto1199(neto1199)"), [ PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
+
 $pdo->exec('SET NAMES utf8');
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $isbn = $_POST['isbn'];
