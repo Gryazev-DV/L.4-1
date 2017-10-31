@@ -53,11 +53,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <tbody>
         <?php foreach ($statement as $row) : ?>
             <tr>
-                <td><?=htmlspecialchars($row['name'])?></td>
-                <td class="uk-text-nowrap"><?=htmlspecialchars($row['author'])?></td>
-                <td class="uk-text-nowrap"><?=htmlspecialchars($row['year'])?></td>
-                <td><?=htmlspecialchars($row['genre'])?></td>
-                <td class="uk-text-nowrap"><?=htmlspecialchars($row['isbn'])?></td>
+                <td><?=$row['name']?></td>
+                <td class="uk-text-nowrap"><?=$row['author']?></td>
+                <td class="uk-text-nowrap"><?=$row['year']?></td>
+                <td><?=$row['genre']?></td>
+                <td class="uk-text-nowrap"><?=$row['isbn']?></td>
             </tr>
         <?php endforeach;?>
 
